@@ -1,0 +1,4 @@
+resource "aws_key_pair" "challenge-kp" {
+    key_name   = "windows_pat_key"
+    public_key = "ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQCw8YZMza1YLi2aPCg1fIP2Iewl+5EQVXz7xLl+2IAaY1F+kFi1okMUIwq8gCXvomEURctrA7cJlmA3vLliM87X5mr/aqpZ//2O0huknHtRby/7GJPaJGR6wRZ9MznNC5iCSxXnLyxnNYXX+KxF8vQgyY02BQ7R0mXiaBqjkFLXwckx1czOtCAc8B2a70OUSLrCLIfTFUTbm3mye9E/6ElTzZlhoZb6ifUe9Lo7Y9vCFQ6xwFZmQT5POO/A1/iLnlGwqyTETIAzM+9PEfpzOzubmc8khbYsT78zjnkEPUKyvnlRcu0zzraxNSmC5ILyjB5Z2N/2fg5g9cKNfN0zXGdG4lMAcn7dwL9C/vZL1Hqmi1dbaMfT9rQe+HhofMsAoqh8/7TG20mOzvKKsPd7UWcvHQMITnO1iAIoUGOPvbwTexFV1PTe8mIs7pWcwzzn+giGsHJ34wE/Ofca6r1wPMQxfR6P7oul3/EsFn70Bqga/zbVrxNs7lwu2OmFayOfhhc= usario@DESKTOP-JE7IARK"
+}
