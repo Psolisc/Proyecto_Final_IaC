@@ -30,13 +30,13 @@ pipeline {
             steps {
                 bat 'terraform providers'
             }
-        } 
+        }
 
         stage('Terraform Graph') {
             steps {
                 bat 'terraform graph | dot -Tsvg > graph.svgt'
             }
-        } 
+        }  
         
         stage('Terraform Plan') {
             when{
