@@ -8,7 +8,7 @@ resource "aws_instance" "my-VM1" {
   }
 
   network_interface {
-    network_interface_id = aws_network_interface.foo.id
+    network_interface_id = aws_network_interface.my-VM1.id
     device_index         = 0 
   }
 
@@ -28,7 +28,7 @@ resource "aws_instance" "my-webserver" {
   }
 
   network_interface {
-    network_interface_id = aws_network_interface.foo2.id
+    network_interface_id = aws_network_interface.my-webserver.id
     device_index         = 0 
   }
 
