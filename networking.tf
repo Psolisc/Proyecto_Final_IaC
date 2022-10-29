@@ -8,7 +8,7 @@ resource "aws_vpc" "main_vpc" {
 }
 
 resource "aws_internet_gateway" "gw" {
-  vpc_id = aws_vpc.default.id
+  vpc_id = aws_vpc.main_vpc.id
 }
 
 resource "aws_subnet" "my_subnet" {
