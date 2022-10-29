@@ -21,6 +21,15 @@ resource "aws_network_interface" "foo" {
   private_ips = ["172.16.10.100"]
 
   tags = {
-    Name = "primary_network_interface"
+    Name = "VM_primary_network_interface"
+  }
+}
+
+resource "aws_network_interface" "foo2" {
+  subnet_id   = aws_subnet.my_subnet.id
+  private_ips = ["172.16.10.200"]
+
+  tags = {
+    Name = "NGINX_primary_network_interface"
   }
 }
